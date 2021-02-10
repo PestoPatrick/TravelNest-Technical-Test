@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {SpacexApiService} from '../../spacex-api.service';
 
 @Component({
   selector: 'app-launch-details',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LaunchDetailsComponent implements OnInit {
 
-  constructor() { }
+  @Input() ships: Array<string>;
+  launchDetails: any;
+
+  GetlaunchDetails(): any {
+    this.spacexAPIService.GetLaunchDetails().subscribe(launchDetails => this.launchDetails = launchDetails);
+  }
+
+  ExtractShipIDs() {
+
+  }
+
+  constructor(private spacexAPIService: SpacexApiService) {
+  }
 
   ngOnInit(): void {
+    this.GetlaunchDetails();
   }
 
 }

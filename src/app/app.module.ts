@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { LaunchDetailsComponent } from './Components/launch-details/launch-details.component';
 import { ShipsComponent } from './Components/ships/ships.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ShipsComponent } from './Components/ships/ships.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    BrowserAnimationsModule,
 
   ],
   providers: [],
