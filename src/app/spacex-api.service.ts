@@ -11,10 +11,12 @@ export class SpacexApiService {
 
   constructor(private http: HttpClient) { }
 
+  // retrieves the latest spacex launch details and returns it as a promise
   async GetLaunchDetails(): Promise<any> {
     return await this.http.get(`${this.baseUrl}launches/latest`).toPromise();
   }
 
+  // retrieves the information on ships spacex owns based on their ID
   async GetShipInformation(id): Promise<any> {
     return await this.http.get(`${this.baseUrl}ships/${id}`).toPromise();
   }
