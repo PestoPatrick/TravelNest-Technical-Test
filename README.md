@@ -1,10 +1,14 @@
-#Technical Test
+# Technical Test
 
 This is my submission for the technical test
 
-#Picture of submission
+# Picture of submission
 
 <img src="https://user-images.githubusercontent.com/40219449/107559286-ce661480-6bd3-11eb-8871-a80f6e3ebbb1.png">
+
+#Docker image
+
+A docker image of my submission is available here: 
 
 # AngularTechTest
 
