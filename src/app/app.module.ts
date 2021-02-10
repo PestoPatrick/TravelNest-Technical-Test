@@ -8,16 +8,21 @@ import { LaunchDetailsComponent } from './Components/launch-details/launch-detai
 import { ShipsComponent } from './Components/ships/ships.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
+import {MatCardModule} from '@angular/material/card';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     LaunchDetailsComponent,
-    ShipsComponent
+    ShipsComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MatCardModule,
 
   ],
   providers: [],

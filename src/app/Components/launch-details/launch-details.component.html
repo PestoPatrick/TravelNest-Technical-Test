@@ -1,2 +1,21 @@
-<p>launch-details works!{{launchDetails}}</p>
-<app-ships></app-ships>
+
+<div class="mainContent">
+
+  <h1 class="pageTitle">SpaceX Latest Launch Information</h1>
+
+<div *ngIf="!launchDetails">
+  <img src="assets/BeanEater.svg" alt="a circle eating beans"/>
+</div>
+<div class="launchDetails" *ngIf="launchDetails">
+  <mat-card>
+  <mat-card-title>Launch Details</mat-card-title>
+  <mat-card-content>
+    <p> Launch Name: {{launchDetails?.name | json}}
+    <p> Launch Date: {{launchDetails?.date_utc | date}}</p>
+    <p> Launch Details: {{launchDetails?.details}}</p>
+  </mat-card-content>
+  </mat-card>
+</div>
+<h2 class="ShipSecTitle">Ships Assigned to Launch</h2>
+<app-ships *ngFor="let ship of shipDetails" [shipDetails]="ship"></app-ships>
+</div>
