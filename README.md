@@ -1,6 +1,6 @@
 # Technical Test
 
-This is my submission for the technical test
+This is my submission for the technical test. I made it with Angular as I am more familiar with it than React which is another reason this job looks like a good opportunity to improve my skills with React. I have managed to implement every requirement.
 
 # Picture of submission
 
@@ -8,7 +8,7 @@ This is my submission for the technical test
 
 #Docker image
 
-A docker image of my submission is available here: 
+A docker image of my submission is available here: https://hub.docker.com/repository/docker/mainmommyjeans/travelnesttechtest/general
 
 # AngularTechTest
 
